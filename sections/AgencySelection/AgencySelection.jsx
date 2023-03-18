@@ -8,7 +8,6 @@ import {
   StyledImageContainer,
   StyledVideo,
   StyledCustomMainContainer,
-  StyledCardContainer,
 } from "./elements.jsx";
 
 export const AgencySelection = ({ title, subTitle }) => {

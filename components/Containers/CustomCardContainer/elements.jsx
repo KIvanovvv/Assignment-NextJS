@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionParagraph } from "../../Typography/SectionParagraph.jsx";
 
 export const StyledCustomCardContainer = styled(({ ...props }) => (
   <div {...props} />
@@ -8,6 +9,13 @@ export const StyledCustomCardContainer = styled(({ ...props }) => (
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 80px;
+
+  padding: 10px 20px;
+`;
+// justify-content: space-between;
+
+export const StyledSectionParagraph = styled(({ ...props }) => (
+  <SectionParagraph {...props} />
+))`
+  margin: 0;
 `;

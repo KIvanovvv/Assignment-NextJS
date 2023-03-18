@@ -9,17 +9,18 @@ export const StyledCustomCardComponent = styled((props) => (
   <CustomCardContainer {...props} />
 ))``;
 
-export const StyledCard = styled((props) => <div {...props} />)`
+export const StyledCard = styled((props) => (
+  <div {...props} style={props.style} />
+))`
 display:flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: flex-start;
 align-items: center;
-padding 15px 50px;
-background-color: #ccc ;
-width: 100%;
+padding 30px 40px;
+background-color: #f4f4f4 ;
 border-radius: 5px;
 box-sizing: border-box;
-gap: 50px;
+gap: 30px;
 `;
 
 export const StyledSectionHeading = styled((props) => (

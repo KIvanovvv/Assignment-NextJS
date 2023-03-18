@@ -6,16 +6,13 @@ import {
   StyledSectionHeading,
   StyledSectionPragraph,
 } from "./elements.jsx";
-export const Card = () => {
+export const Card = ({ title, icon, content, cardStyles }) => {
   return (
-    <StyledCard>
-      <i class="fa-regular fa-building fa-3x" />
+    <StyledCard style={{ ...cardStyles }}>
+      {icon}
       <StyledContentContainer>
-        <StyledSectionHeading>Brief</StyledSectionHeading>
-        <StyledSectionPragraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-          voluptates, qui incidunt recusandae .
-        </StyledSectionPragraph>
+        <StyledSectionHeading>{title}</StyledSectionHeading>
+        <StyledSectionPragraph>{content}</StyledSectionPragraph>
       </StyledContentContainer>
     </StyledCard>
   );

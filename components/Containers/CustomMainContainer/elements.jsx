@@ -6,10 +6,11 @@ export const StyledCustomMainContainer = styled(({ ...props }) => (
 ))`
   width: 100%;
   height: auto;
-  background-image: url(${bg.src});
-  background-size: 900px;
-  background-position: 21% 200px;
-  background-repeat: no-repeat;
+
   padding: 3rem;
-  border: 5px red solid;
 `;
+// background-size: 850px;
+// background-repeat: no-repeat;
+// background-position: 20% 170px;
+// background-image: url(${bg.src});
+// background: center center cover no-repeat;

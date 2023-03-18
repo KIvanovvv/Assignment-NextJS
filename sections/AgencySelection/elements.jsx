@@ -1,14 +1,9 @@
 import styled from "styled-components";
-import classes from "../../styles/AgencySelection.module.css";
-import bg from "../../resources/background.png";
 import video from "../../resources/video.png";
-import {
-  SectionContainer,
-  SectionBigHeading,
-  SectionSubheading,
-} from "~/components";
+import bg from "../../resources/background.png";
+
 import { CustomMainContainer } from "../../components/Containers";
-import { CustomCardContainer } from "../../components/Containers/CustomCardContainer/CustomCardContainer.jsx";
+import { SectionHeading, SectionSubheading } from "../../components/Typography";
 
 export const StyledCustomMainContainer = styled(({ ...props }) => (
   <CustomMainContainer {...props} />
@@ -18,10 +13,11 @@ export const StyledCustomMainContainer = styled(({ ...props }) => (
   gap: 30px;
 `;
 
-export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
+export const StyledTitle = styled((props) => <SectionHeading {...props} />)`
   margin: 0;
   padding: 0;
   color: black;
+  line-height: 3rem;
 `;
 
 export const StyledDescription = styled((props) => (
@@ -37,7 +33,7 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: green;
+
   font-family: sans-serif;
 `;
 
@@ -47,6 +43,10 @@ export const StyledImageContainer = styled(({ ...props }) => (
   width: 48%;
   height: 500px;
   display: flex;
+
+  justify-content: flex-end;
+  padding: 0 60px;
+  box-sizing: border-box;
 `;
 
 export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
@@ -58,15 +58,20 @@ export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
 export const StyledInfoContainer = styled(({ ...props }) => <div {...props} />)`
   display: flex;
   flex-direction: row;
+
+  background-image: url(${bg.src});
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  background-size: 80%;
+  margin: auto;
 `;
 
 export const StyledVideo = styled(({ ...props }) => <div {...props} />)`
-  width: 300px;
+  width: 306px;
   height: 100%;
   background-image: url(${video.src});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
-  margin-left: 45%;
 `;
