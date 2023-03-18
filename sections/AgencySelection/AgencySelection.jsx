@@ -1,26 +1,31 @@
 import Image from "next/image";
+import { CustomCardContainer } from "../../components/Containers/CustomCardContainer/CustomCardContainer.jsx";
 import {
-  StyledContainer,
+  StyledInfoContainer,
   StyledTitle,
   StyledDescription,
   StyledTextContainer,
   StyledImageContainer,
   StyledVideo,
-  StyledBackground,
   StyledCustomMainContainer,
+  StyledCardContainer,
 } from "./elements.jsx";
 
-export const AgencySelection = ({ title, subTitle, image }) => {
-  console.log(image);
+export const AgencySelection = ({ title, subTitle }) => {
   return (
     <StyledCustomMainContainer>
       <StyledTextContainer>
         <StyledTitle>{title}</StyledTitle>
         <StyledDescription>{subTitle}</StyledDescription>
       </StyledTextContainer>
-      <StyledImageContainer>
-        <StyledVideo />
-      </StyledImageContainer>
+      <StyledInfoContainer>
+        <StyledImageContainer>
+          <StyledVideo />
+        </StyledImageContainer>
+        <StyledCardContainer>
+          <CustomCardContainer />
+        </StyledCardContainer>
+      </StyledInfoContainer>
     </StyledCustomMainContainer>
   );
 };

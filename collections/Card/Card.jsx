@@ -1,7 +1,9 @@
 // The Card to be exported goes here
-
-import { StyledTextContainer } from "./elements.jsx";
-
-export const Card = ({ children }) => {
-  return <StyledTextContainer>{children}</StyledTextContainer>;
+import {SectionInnerHeading, SectionParagraph} from "../../components/Typography"
+export const Card = () => {
+  return <div>
+    <SectionInnerHeading>Brief</SectionInnerHeading>
+    <SectionParagraph>test paragrapf</SectionParagraph>
+    
+  </div>;
 };

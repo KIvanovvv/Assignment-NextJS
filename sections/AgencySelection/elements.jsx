@@ -1,13 +1,14 @@
 import styled from "styled-components";
+import classes from "../../styles/AgencySelection.module.css";
 import bg from "../../resources/background.png";
 import video from "../../resources/video.png";
 import {
-  Button,
   SectionContainer,
   SectionBigHeading,
   SectionSubheading,
 } from "~/components";
 import { CustomMainContainer } from "../../components/Containers";
+import { CustomCardContainer } from "../../components/Containers/CustomCardContainer/CustomCardContainer.jsx";
 
 export const StyledCustomMainContainer = styled(({ ...props }) => (
   <CustomMainContainer {...props} />
@@ -45,10 +46,20 @@ export const StyledImageContainer = styled(({ ...props }) => (
 ))`
   width: 48%;
   height: 500px;
-  background-color:orange
   display: flex;
+`;
 
-  
+export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
+  width: 48%;
+  height: 500px;
+  display: flex;
+  border: 5px solid orange;
+`;
+
+export const StyledInfoContainer = styled(({ ...props }) => <div {...props} />)`
+  border: 5px green solid;
+  display: flex;
+  flex-direction: row;
 `;
 
 export const StyledVideo = styled(({ ...props }) => <div {...props} />)`
@@ -60,14 +71,4 @@ export const StyledVideo = styled(({ ...props }) => <div {...props} />)`
   background-repeat: no-repeat;
   border-radius: 10px;
   margin-left: 45%;
-`;
-
-export const StyledBackground = styled(({ ...props }) => <div {...props} />)`
-  width: 200px;
-  height: 100%;
-  background-image: url(${bg.src});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
 `;

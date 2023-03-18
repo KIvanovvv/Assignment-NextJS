@@ -11,4 +11,5 @@ export const StyledCustomMainContainer = styled(({ ...props }) => (
   background-position: 21% 200px;
   background-repeat: no-repeat;
   padding: 3rem;
+  border: 5px red solid;
 `;
