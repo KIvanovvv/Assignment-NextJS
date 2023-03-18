@@ -22,9 +22,7 @@ export const AgencySelection = ({ title, subTitle }) => {
         <StyledImageContainer>
           <StyledVideo />
         </StyledImageContainer>
-        <StyledCardContainer>
-          <CustomCardContainer />
-        </StyledCardContainer>
+        <CustomCardContainer />
       </StyledInfoContainer>
     </StyledCustomMainContainer>
   );

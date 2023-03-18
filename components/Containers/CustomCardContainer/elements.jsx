@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const StyledCustomCardContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  width: 100%;
+  width: 48%;
   height: auto;
-  dispay: flex;
+  display: flex;
   flex-direction: column;
-  border: 5px black solid;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 80px;
 `;

@@ -53,11 +53,9 @@ export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
   width: 48%;
   height: 500px;
   display: flex;
-  border: 5px solid orange;
 `;
 
 export const StyledInfoContainer = styled(({ ...props }) => <div {...props} />)`
-  border: 5px green solid;
   display: flex;
   flex-direction: row;
 `;
