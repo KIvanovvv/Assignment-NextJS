@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { CustomCardContainer } from "../../components/Containers/CustomCardContainer/CustomCardContainer.jsx";
 import {
   StyledInfoContainer,

@@ -62,7 +62,7 @@ export const StyledInfoContainer = styled(({ ...props }) => <div {...props} />)`
   background-image: url(${bg.src});
   background-repeat: no-repeat;
   max-width: 1200px;
-  background-size: 80%;
+  background-size: 70%;
   margin: auto;
 `;
 

@@ -1,6 +1,4 @@
-// Styled elements for the Card go here
 import styled from "styled-components";
-
 import { CustomCardContainer } from "../../components/Containers/CustomCardContainer/CustomCardContainer.jsx";
 import { SectionInnerHeading } from "../../components/Typography/SectionInnerHeading.jsx";
 import { SectionParagraph } from "../../components/Typography/SectionParagraph.jsx";
@@ -16,11 +14,14 @@ display:flex;
 flex-direction: row;
 justify-content: flex-start;
 align-items: center;
-padding 30px 40px;
+padding 20px 41px;
 background-color: #f4f4f4 ;
 border-radius: 5px;
 box-sizing: border-box;
-gap: 30px;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+gap: 20px;
+cursor: pointer;
 `;
 
 export const StyledSectionHeading = styled((props) => (
