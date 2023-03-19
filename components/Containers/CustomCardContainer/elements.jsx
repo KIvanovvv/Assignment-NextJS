@@ -10,6 +10,18 @@ export const StyledCustomCardContainer = styled(({ ...props }) => (
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 20px;
+  box-sizing: border-box;
+  @media (max-width: 1350px) {
+    width: 50%;
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
+    gap: 20px;
+  }
+  @media (max-width: 420px) {
+    width: 370px;
+    padding: 0;
+  }
 `;
 
 export const StyledSectionParagraph = styled(({ ...props }) => (

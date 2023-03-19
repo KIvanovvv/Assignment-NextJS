@@ -1,5 +1,4 @@
 import { AgencySelection } from "../../sections";
-import { Card } from "../../collections";
 
 const agencySelectionProps = {
   title: "Managed agency selection",

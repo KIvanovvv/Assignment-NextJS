@@ -18,12 +18,18 @@ export const StyledTitle = styled((props) => <SectionHeading {...props} />)`
   padding: 0;
   color: black;
   line-height: 3rem;
+  @media (max-width: 630px) {
+    font-size: 1.5rem;
+  } ;
 `;
 
 export const StyledDescription = styled((props) => (
   <SectionSubheading {...props} />
 ))`
   margin: 0;
+  @media (max-width: 630px) {
+    font-size: 1rem;
+  } ;
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
@@ -33,7 +39,6 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   align-items: center;
   justify-content: center;
   width: 100%;
-
   font-family: sans-serif;
 `;
 
@@ -43,10 +48,14 @@ export const StyledImageContainer = styled(({ ...props }) => (
   width: 48%;
   height: 500px;
   display: flex;
-
   justify-content: flex-end;
   padding: 0 60px;
   box-sizing: border-box;
+  @media (max-width: 1024px) {
+    width: 100%;
+    aling-items: center;
+    justify-content: center;
+  }
 `;
 
 export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
@@ -58,12 +67,17 @@ export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
 export const StyledInfoContainer = styled(({ ...props }) => <div {...props} />)`
   display: flex;
   flex-direction: row;
-
   background-image: url(${bg.src});
   background-repeat: no-repeat;
   max-width: 1200px;
   background-size: 70%;
   margin: auto;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    background-size: 100%;
+    background-position: -25px 65px;
+    gap: 20px;
+  }
 `;
 
 export const StyledVideo = styled(({ ...props }) => <div {...props} />)`
